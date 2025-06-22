@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const app = express();
 const PORT = 5000;
-const API_KEY = 'AIzaSyDD-w41p1hY3IVjEg_jTCkpP6b3Am7zkf4'; // Your Google Maps API key
+const API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"; // Replace with your API key
 
 app.use(express.json());
 app.use(cors());
