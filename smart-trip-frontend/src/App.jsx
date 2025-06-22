@@ -17,7 +17,7 @@ function App() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const GOOGLE_API_KEY = 'AIzaSyDD-w41p1hY3IVjEg_jTCkpP6b3Am7zkf4';
+  const GOOGLE_API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"; // Replace with your API key
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: GOOGLE_API_KEY,
