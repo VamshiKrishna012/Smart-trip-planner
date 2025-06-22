@@ -1,0 +1,74 @@
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #0056b3;
+}
+
+.trip-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.trip-form input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.trip-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.trip-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.trip-form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.spinner {
+  text-align: center;
+  color: #007bff;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.trip-display {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.day {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.day h4 {
+  margin: 0 0 10px;
+}
+
+.day p {
+  margin: 5px 0;
+}
+
+.day ul {
+  margin: 0 0 10px 20px;
+  padding: 0;
+}
