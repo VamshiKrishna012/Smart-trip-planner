@@ -17,7 +17,8 @@ function App() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const GOOGLE_API_KEY = "YOUR_GOOGLE_MAPS_API_KEY"; // Replace with your API key
+  const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: GOOGLE_API_KEY,
@@ -35,7 +36,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/trip', formData);
+      const response = await axios.post(`${API_URL}/api/trip`, formData);
       setTripData(response.data);
     } catch (err) {
       setError(err.response?.data?.error || 'Something went wrong');
